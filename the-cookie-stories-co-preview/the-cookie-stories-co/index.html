@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Cookie Stories Co. | Homepage Concept</title>
+  <meta name="description" content="Unofficial homepage concept for The Cookie Stories Co., a personalised cookie and wedding favour business in Bentleigh, Victoria." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cocoa: '#2c1911',
+            ganache: '#1b0f0a',
+            cream: '#fff8eb',
+            icing: '#f7d7dc',
+            rose: '#d8798c',
+            butter: '#f3c96b',
+            pistachio: '#b8c98a',
+            flour: '#f8ead7'
+          },
+          fontFamily: {
+            serif: ['Georgia', 'Times New Roman', 'serif'],
+            sans: ['Inter', 'ui-sans-serif', 'system-ui']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background:#fff8eb; color:#2c1911; }
+    .hero-bg {
+      background:
+        radial-gradient(circle at 20% 15%, rgba(216,121,140,.34), transparent 30%),
+        radial-gradient(circle at 75% 10%, rgba(243,201,107,.30), transparent 28%),
+        radial-gradient(circle at 65% 80%, rgba(184,201,138,.22), transparent 30%),
+        linear-gradient(135deg,#fff8eb 0%,#f8ead7 48%,#f7d7dc 100%);
+    }
+    .noise:before {
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      opacity:.17;
+      background-image: radial-gradient(circle at 1px 1px, rgba(44,25,17,.18) 1px, transparent 0);
+      background-size: 18px 18px;
+      mix-blend-mode: multiply;
+    }
+    .ticker { animation: ticker 30s linear infinite; }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .cookie-shadow { box-shadow: 0 35px 90px rgba(44,25,17,.18); }
+  </style>
+</head>
+<body class="font-sans selection:bg-rose selection:text-white">
+  <div class="fixed top-0 left-0 right-0 z-[60] border-b border-cocoa/10 bg-cream/90 px-4 py-2 text-center text-xs text-cocoa/55 backdrop-blur">
+    Unofficial website concept created for preview purposes only.
+  </div>
+
+  <header class="fixed left-0 right-0 top-8 z-50 border-b border-cocoa/10 bg-cream/85 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+      <a href="#top" class="flex items-center gap-3">
+        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-cocoa text-lg font-black text-cream cookie-shadow">CS</div>
+        <div>
+          <div class="text-sm font-black uppercase tracking-[0.22em] text-cocoa">The Cookie Stories Co.</div>
+          <div class="text-xs text-cocoa/50">Personalised cookies · Bentleigh</div>
+        </div>
+      </a>
+      <nav class="hidden items-center gap-7 text-sm font-semibold text-cocoa/65 lg:flex">
+        <a class="hover:text-rose" href="#occasions">Occasions</a>
+        <a class="hover:text-rose" href="#story">Story</a>
+        <a class="hover:text-rose" href="#reviews">Reviews</a>
+        <a class="hover:text-rose" href="#enquire">Enquire</a>
+      </nav>
+      <a href="#enquire" class="rounded-full bg-cocoa px-5 py-2.5 text-sm font-black text-cream transition hover:bg-rose">Start an order</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero-bg noise relative isolate min-h-screen overflow-hidden px-5 pb-24 pt-40 lg:px-8">
+      <div class="relative mx-auto grid max-w-7xl items-center gap-14 pt-12 lg:grid-cols-[1.03fr_0.97fr] lg:pt-20">
+        <div>
+          <div class="mb-7 inline-flex items-center gap-3 rounded-full border border-cocoa/10 bg-white/45 px-4 py-2 backdrop-blur">
+            <span class="text-rose">★★★★★</span>
+            <span class="text-sm font-bold text-cocoa">5.0 Google-rated cookie studio</span>
+            <span class="hidden text-sm text-cocoa/45 sm:inline">· Weddings · birthdays · branded events</span>
+          </div>
+
+          <h1 class="font-serif max-w-4xl text-6xl font-black leading-[0.9] tracking-[-0.06em] text-cocoa sm:text-7xl lg:text-8xl">
+            Cookies that tell the story before the first bite.
+          </h1>
+
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-cocoa/72 sm:text-xl">
+            Personalised fondant cookies for weddings, baby showers, birthdays, corporate gifts and little moments worth making sweeter.
+          </p>
+
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a href="#enquire" class="inline-flex items-center justify-center gap-2 rounded-full bg-rose px-6 py-3 text-sm font-black text-white cookie-shadow transition hover:scale-[1.02]">
+              Request a quote →
+            </a>
+            <a href="#occasions" class="inline-flex items-center justify-center gap-2 rounded-full border border-cocoa/15 bg-white/35 px-6 py-3 text-sm font-black text-cocoa transition hover:bg-white/60">
+              Explore occasions →
+            </a>
+          </div>
+
+          <div class="mt-10 grid max-w-2xl grid-cols-3 gap-3 text-center sm:text-left">
+            <div class="rounded-3xl border border-cocoa/10 bg-white/40 p-4 backdrop-blur">
+              <div class="font-serif text-3xl font-bold text-rose">12+</div>
+              <div class="mt-1 text-xs uppercase tracking-[0.16em] text-cocoa/45">Minimum order</div>
+            </div>
+            <div class="rounded-3xl border border-cocoa/10 bg-white/40 p-4 backdrop-blur">
+              <div class="font-serif text-3xl font-bold text-rose">5.0</div>
+              <div class="mt-1 text-xs uppercase tracking-[0.16em] text-cocoa/45">Google rating</div>
+            </div>
+            <div class="rounded-3xl border border-cocoa/10 bg-white/40 p-4 backdrop-blur">
+              <div class="font-serif text-3xl font-bold text-rose">8w</div>
+              <div class="mt-1 text-xs uppercase tracking-[0.16em] text-cocoa/45">Fresh airtight</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-rose/30 blur-3xl"></div>
+          <div class="relative rounded-[2.2rem] border border-cocoa/10 bg-white/45 p-5 cookie-shadow backdrop-blur">
+            <div class="relative min-h-[560px] overflow-hidden rounded-[1.7rem] border border-cocoa/10 bg-flour p-7">
+              <div class="absolute left-8 top-8 h-36 w-36 rounded-full bg-butter/45 blur-2xl"></div>
+              <div class="absolute bottom-10 right-12 h-44 w-44 rounded-full bg-icing/70 blur-2xl"></div>
+
+              <div class="relative grid h-full min-h-[500px] place-items-center">
+                <div class="relative h-[420px] w-[420px] max-w-full rounded-full bg-[#c18a55] cookie-shadow">
+                  <div class="absolute inset-5 rounded-full border-[18px] border-[#f8e4e7] bg-[#f4bdc8]"></div>
+                  <div class="absolute inset-16 rounded-full border-[2px] border-white/70"></div>
+                  <div class="absolute left-1/2 top-[105px] w-[250px] -translate-x-1/2 text-center">
+                    <p class="text-xs font-black uppercase tracking-[0.35em] text-cocoa/55">Made for</p>
+                    <h2 class="font-serif mt-4 text-5xl font-black leading-[0.9] tracking-[-0.05em] text-cocoa">
+                      Sweet<br/>Stories
+                    </h2>
+                    <p class="mt-5 text-sm leading-6 text-cocoa/70">
+                      Names, colours, themes and tiny details — baked into the favour.
+                    </p>
+                  </div>
+                  <div class="absolute left-14 top-20 h-5 w-5 rounded-full bg-white/70"></div>
+                  <div class="absolute right-20 top-16 h-4 w-4 rounded-full bg-white/65"></div>
+                  <div class="absolute bottom-24 left-24 h-4 w-4 rounded-full bg-white/70"></div>
+                  <div class="absolute bottom-20 right-24 h-5 w-5 rounded-full bg-white/65"></div>
+                </div>
+              </div>
+
+              <div class="relative -mt-8 rounded-3xl border border-cocoa/10 bg-white/55 p-5 backdrop-blur">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="font-black text-cocoa">Perfect for</span>
+                  <span class="text-cocoa/45">weddings, parties, gifting</span>
+                </div>
+                <p class="mt-4 text-sm leading-6 text-cocoa/62">
+                  The website should make ordering feel clear, beautiful and emotionally easy — not buried inside listings and DMs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="overflow-hidden border-y border-cocoa/10 bg-cocoa py-4 text-cream">
+      <div class="ticker flex w-[200%] gap-8 whitespace-nowrap text-sm font-black uppercase tracking-[0.28em]">
+        <div class="flex w-1/2 justify-around">
+          <span>Wedding Favours</span><span>Place Cards</span><span>Baby Showers</span><span>Corporate Gifts</span><span>Birthday Parties</span><span>Thank You Boxes</span>
+        </div>
+        <div class="flex w-1/2 justify-around">
+          <span>Wedding Favours</span><span>Place Cards</span><span>Baby Showers</span><span>Corporate Gifts</span><span>Birthday Parties</span><span>Thank You Boxes</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="occasions" class="px-5 py-24 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="max-w-3xl">
+          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-rose/25 bg-rose/10 px-4 py-2 text-xs font-black uppercase tracking-[0.28em] text-rose">✦ Occasions</div>
+          <h2 class="font-serif text-5xl font-black tracking-[-0.05em] sm:text-6xl">A cookie for the table, the gift box, and the memory.</h2>
+          <p class="mt-6 text-lg leading-8 text-cocoa/65">
+            This homepage concept positions The Cookie Stories Co. around high-intent ordering moments: weddings, celebrations, baby arrivals, brand events and personalised gifting.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <article class="rounded-[2rem] border border-cocoa/10 bg-white/55 p-6 transition hover:-translate-y-1 hover:border-rose/50">
+            <div class="mb-12 text-4xl">💍</div>
+            <h3 class="font-serif text-3xl font-bold">Weddings</h3>
+            <p class="mt-4 text-sm leading-7 text-cocoa/60">Bomboniere, place cards, bridal party thank-you gifts and dessert-table details matched to the palette.</p>
+          </article>
+          <article class="rounded-[2rem] border border-cocoa/10 bg-white/55 p-6 transition hover:-translate-y-1 hover:border-rose/50">
+            <div class="mb-12 text-4xl">🎈</div>
+            <h3 class="font-serif text-3xl font-bold">Parties</h3>
+            <p class="mt-4 text-sm leading-7 text-cocoa/60">Birthdays, baby showers, christenings, launches and celebrations with personalised edible details.</p>
+          </article>
+          <article class="rounded-[2rem] border border-cocoa/10 bg-white/55 p-6 transition hover:-translate-y-1 hover:border-rose/50">
+            <div class="mb-12 text-4xl">🎁</div>
+            <h3 class="font-serif text-3xl font-bold">Gifting</h3>
+            <p class="mt-4 text-sm leading-7 text-cocoa/60">Gift boxes, thank-you treats, name cookies and sweet messages people actually remember.</p>
+          </article>
+          <article class="rounded-[2rem] border border-cocoa/10 bg-white/55 p-6 transition hover:-translate-y-1 hover:border-rose/50">
+            <div class="mb-12 text-4xl">🏷️</div>
+            <h3 class="font-serif text-3xl font-bold">Corporate</h3>
+            <p class="mt-4 text-sm leading-7 text-cocoa/60">Branded cookies for events, client gifting, launches and table settings that do more than sit there.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="bg-cocoa px-5 py-24 text-cream lg:px-8">
+      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+        <div>
+          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-cream/15 bg-white/5 px-4 py-2 text-xs font-black uppercase tracking-[0.28em] text-butter">✦ The story</div>
+          <h2 class="font-serif text-5xl font-black leading-[0.96] tracking-[-0.05em] sm:text-6xl">Personalisation is the product. The cookie is the vessel.</h2>
+          <p class="mt-6 text-lg leading-8 text-cream/70">
+            The existing reputation already says the important things: fast turnaround, punctual service, thoughtful customisation and cookies that look beautiful without sacrificing taste.
+          </p>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a href="#enquire" class="rounded-full bg-cream px-6 py-3 text-center text-sm font-black text-cocoa transition hover:bg-butter">Start a quote</a>
+            <a href="#reviews" class="rounded-full border border-cream/20 px-6 py-3 text-center text-sm font-black text-cream transition hover:bg-white/10">Read proof</a>
+          </div>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2">
+          <div class="rounded-[2rem] bg-cream p-7 text-cocoa">
+            <div class="text-3xl text-rose">01</div>
+            <h3 class="mt-8 text-xl font-black">Make ordering obvious</h3>
+            <p class="mt-4 text-sm leading-7 text-cocoa/65">Visitors should instantly understand minimums, occasions, delivery/pickup and how to request a quote.</p>
+          </div>
+          <div class="rounded-[2rem] bg-white/10 p-7 text-cream">
+            <div class="text-3xl text-butter">02</div>
+            <h3 class="mt-8 text-xl font-black">Show the emotional use case</h3>
+            <p class="mt-4 text-sm leading-7 text-cream/65">Weddings, babies and birthdays are story-driven purchases. The site should sell sentiment, not just sugar.</p>
+          </div>
+          <div class="rounded-[2rem] bg-white/10 p-7 text-cream">
+            <div class="text-3xl text-pistachio">03</div>
+            <h3 class="mt-8 text-xl font-black">Build trust quickly</h3>
+            <p class="mt-4 text-sm leading-7 text-cream/65">Reviews about punctual service and repeat orders are more powerful than generic bakery claims.</p>
+          </div>
+          <div class="rounded-[2rem] bg-rose p-7 text-white">
+            <div class="text-3xl text-white/80">04</div>
+            <h3 class="mt-8 text-xl font-black">Create a photo-first path</h3>
+            <p class="mt-4 text-sm leading-7 text-white/75">A final version should use proper product photography so every cookie feels gift-worthy before enquiry.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="px-5 py-24 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-rose/25 bg-rose/10 px-4 py-2 text-xs font-black uppercase tracking-[0.28em] text-rose">✦ Reputation</div>
+            <h2 class="font-serif text-5xl font-black tracking-[-0.05em] sm:text-6xl">The reviews already sell the business.</h2>
+            <p class="mt-6 text-lg leading-8 text-cocoa/65">
+              The website should put the strongest proof at the front: beautiful presentation, great taste, reliable timing and personalised products people reorder.
+            </p>
+            <div class="mt-8 rounded-[2rem] border border-cocoa/10 bg-white/55 p-6">
+              <p class="text-rose">★★★★★</p>
+              <p class="mt-4 font-serif text-4xl font-black text-cocoa">5.0 / 5.0</p>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cocoa/45">Google rating signal</p>
+            </div>
+          </div>
+
+          <div class="grid gap-5 md:grid-cols-2">
+            <figure class="rounded-[2rem] border border-cocoa/10 bg-white/55 p-6">
+              <p class="text-rose">★★★★★</p>
+              <blockquote class="mt-5 text-base leading-7 text-cocoa/76">“Fantastic cookies! Amazing and punctual service. More importantly, taste amazing!”</blockquote>
+              <figcaption class="mt-6 border-t border-cocoa/10 pt-5"><div class="font-bold">Google review excerpt</div><div class="mt-1 text-xs uppercase tracking-[0.2em] text-cocoa/38">Service proof</div></figcaption>
+            </figure>
+            <figure class="rounded-[2rem] border border-cocoa/10 bg-white/55 p-6">
+              <p class="text-rose">★★★★★</p>
+              <blockquote class="mt-5 text-base leading-7 text-cocoa/76">“Each time they have been a hit. Such a quick turnaround for a personalised product.”</blockquote>
+              <figcaption class="mt-6 border-t border-cocoa/10 pt-5"><div class="font-bold">Google review excerpt</div><div class="mt-1 text-xs uppercase tracking-[0.2em] text-cocoa/38">Repeat order proof</div></figcaption>
+            </figure>
+            <figure class="rounded-[2rem] border border-cocoa/10 bg-white/55 p-6 md:col-span-2">
+              <p class="text-rose">★★★★★</p>
+              <blockquote class="mt-5 text-base leading-7 text-cocoa/76">“We use The Cookie Stories Co. for all of our events, personally and professionally and they have never let us down.”</blockquote>
+              <figcaption class="mt-6 border-t border-cocoa/10 pt-5"><div class="font-bold">Google review excerpt</div><div class="mt-1 text-xs uppercase tracking-[0.2em] text-cocoa/38">Event reliability proof</div></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="enquire" class="px-5 pb-24 lg:px-8">
+      <div class="mx-auto grid max-w-7xl overflow-hidden rounded-[2.2rem] border border-cocoa/10 bg-white/55 cookie-shadow lg:grid-cols-[1fr_1fr]">
+        <div class="p-8 sm:p-12 lg:p-16">
+          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-rose/25 bg-rose/10 px-4 py-2 text-xs font-black uppercase tracking-[0.28em] text-rose">✦ Quote path</div>
+          <h2 class="font-serif text-5xl font-black leading-[0.96] tracking-[-0.05em]">Tell us the occasion. We’ll make it edible.</h2>
+          <p class="mt-6 text-lg leading-8 text-cocoa/66">
+            This form is the key conversion point: date, quantity, colours, wording, pickup/delivery and event type.
+          </p>
+          <div class="mt-8 grid gap-4 sm:grid-cols-2">
+            <div class="rounded-3xl border border-cocoa/10 bg-cream p-5"><div class="mb-4 text-rose">☎</div><div class="font-bold">+61 424 451 646</div><div class="mt-1 text-sm text-cocoa/45">Public listing phone</div></div>
+            <div class="rounded-3xl border border-cocoa/10 bg-cream p-5"><div class="mb-4 text-rose">⌖</div><div class="font-bold">10/60–66 Patterson Rd</div><div class="mt-1 text-sm text-cocoa/45">Bentleigh VIC</div></div>
+          </div>
+        </div>
+
+        <form class="border-t border-cocoa/10 bg-flour p-8 sm:p-12 lg:border-l lg:border-t-0 lg:p-16" onsubmit="event.preventDefault(); document.getElementById('form-confirm').classList.remove('hidden');">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <label class="block"><span class="mb-2 block text-xs font-black uppercase tracking-[0.2em] text-cocoa/45">Name</span><input required class="w-full rounded-2xl border border-cocoa/10 bg-white px-4 py-3 text-cocoa outline-none transition placeholder:text-cocoa/25 focus:border-rose" placeholder="Your name" /></label>
+            <label class="block"><span class="mb-2 block text-xs font-black uppercase tracking-[0.2em] text-cocoa/45">Phone / email</span><input required class="w-full rounded-2xl border border-cocoa/10 bg-white px-4 py-3 text-cocoa outline-none transition placeholder:text-cocoa/25 focus:border-rose" placeholder="Best contact" /></label>
+          </div>
+          <label class="mt-4 block"><span class="mb-2 block text-xs font-black uppercase tracking-[0.2em] text-cocoa/45">Occasion</span><select class="w-full rounded-2xl border border-cocoa/10 bg-white px-4 py-3 text-cocoa outline-none transition focus:border-rose"><option>Wedding / bomboniere</option><option>Birthday party</option><option>Baby shower / birth announcement</option><option>Corporate / branded event</option><option>Gift box</option></select></label>
+          <div class="mt-4 grid gap-4 sm:grid-cols-2">
+            <label class="block"><span class="mb-2 block text-xs font-black uppercase tracking-[0.2em] text-cocoa/45">Quantity</span><input class="w-full rounded-2xl border border-cocoa/10 bg-white px-4 py-3 text-cocoa outline-none transition placeholder:text-cocoa/25 focus:border-rose" placeholder="e.g. 24, 80, 150" /></label>
+            <label class="block"><span class="mb-2 block text-xs font-black uppercase tracking-[0.2em] text-cocoa/45">Event date</span><input type="date" class="w-full rounded-2xl border border-cocoa/10 bg-white px-4 py-3 text-cocoa outline-none transition focus:border-rose" /></label>
+          </div>
+          <label class="mt-4 block"><span class="mb-2 block text-xs font-black uppercase tracking-[0.2em] text-cocoa/45">Design notes</span><textarea rows="5" class="w-full rounded-2xl border border-cocoa/10 bg-white px-4 py-3 text-cocoa outline-none transition placeholder:text-cocoa/25 focus:border-rose" placeholder="Names, colours, theme, wording, shapes, delivery/pickup details."></textarea></label>
+          <button class="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-cocoa px-6 py-4 text-sm font-black text-cream transition hover:bg-rose">Request a quote →</button>
+          <p id="form-confirm" class="hidden mt-4 rounded-2xl border border-rose/30 bg-rose/10 p-4 text-sm text-cocoa">Form interaction demo: connect to email, Squarespace, Shopify, Tally, Typeform or a CRM before launch.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-cocoa/10 px-5 py-10 lg:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col gap-5 text-sm text-cocoa/45 sm:flex-row sm:items-center sm:justify-between">
+      <div>Unofficial website concept for preview purposes only.</div>
+      <div class="flex gap-4">
+        <a class="hover:text-rose" href="#occasions">Occasions</a>
+        <a class="hover:text-rose" href="#enquire">Enquire</a>
+        <a class="hover:text-rose" href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
