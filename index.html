@@ -1,315 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Little Rogue | Homepage Concept</title>
-  <meta name="description" content="Unofficial homepage concept for Little Rogue, a specialty coffee and matcha cafe behind the blue door at 12 Drewery Lane, Melbourne." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Previews | Vivian McQueen</title>
+  <meta name="description" content="Preview library for local business website concepts.">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ink: '#0b0e13',
-            paper: '#f5efe4',
-            rogueblue: '#1157ff',
-            coffee: '#3a2417',
-            matcha: '#8da65a',
-            butter: '#f3d88b'
-          },
-          fontFamily: {
-            serif: ['Georgia', 'Times New Roman', 'serif'],
-            sans: ['Inter', 'ui-sans-serif', 'system-ui']
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    html { scroll-behavior: smooth; }
-    body { background:#0b0e13; color:#f5efe4; }
-    .grain:before {
-      content:"";
-      position:absolute;
-      inset:0;
-      pointer-events:none;
-      opacity:.13;
-      background-image:
-        radial-gradient(circle at 1px 1px, rgba(245,239,228,.36) 1px, transparent 0);
-      background-size: 18px 18px;
-      mix-blend-mode: overlay;
-    }
-    .laneway {
-      background:
-        radial-gradient(circle at 25% 20%, rgba(17,87,255,.35), transparent 28%),
-        radial-gradient(circle at 78% 10%, rgba(243,216,139,.20), transparent 24%),
-        linear-gradient(135deg, #0b0e13 0%, #1b1720 48%, #07090d 100%);
-    }
-    .shadow-blue { box-shadow: 0 30px 90px rgba(17,87,255,.22); }
-    .ticker { animation: ticker 28s linear infinite; }
-    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-  </style>
 </head>
-<body class="font-sans selection:bg-rogueblue selection:text-white">
-  <div class="fixed top-0 left-0 right-0 z-[60] border-b border-white/10 bg-ink/90 px-4 py-2 text-center text-xs text-paper/60 backdrop-blur">
-    Unofficial website concept created for preview purposes only.
-  </div>
+<body class="bg-[#0b0e13] text-white font-sans">
+  <main class="min-h-screen px-6 py-12">
+    <section class="mx-auto max-w-5xl">
+      <p class="text-sm uppercase tracking-[0.3em] text-white/45">Vivian McQueen</p>
+      <h1 class="mt-4 text-5xl md:text-7xl font-black tracking-[-0.06em]">Website Previews</h1>
+      <p class="mt-6 max-w-2xl text-lg leading-8 text-white/65">
+        A private/public preview library for local business website concepts.
+      </p>
 
-  <header class="fixed left-0 right-0 top-8 z-50 border-b border-white/10 bg-ink/80 backdrop-blur-xl">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-      <a href="#top" class="flex items-center gap-3">
-        <div class="flex h-11 w-11 items-center justify-center rounded-full bg-rogueblue text-lg font-black text-white shadow-blue">LR</div>
-        <div>
-          <div class="text-sm font-black uppercase tracking-[0.24em] text-paper">Little Rogue</div>
-          <div class="text-xs text-paper/45">Blue Door @ 12 Drewery Lane</div>
-        </div>
-      </a>
-      <nav class="hidden items-center gap-7 text-sm text-paper/65 lg:flex">
-        <a class="hover:text-butter" href="#menu">Menu</a>
-        <a class="hover:text-butter" href="#story">Story</a>
-        <a class="hover:text-butter" href="#reviews">Reputation</a>
-        <a class="hover:text-butter" href="#visit">Visit</a>
-      </nav>
-      <a href="#visit" class="rounded-full bg-paper px-5 py-2.5 text-sm font-black text-ink transition hover:bg-butter">Find the blue door</a>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="laneway grain relative isolate min-h-screen overflow-hidden px-5 pb-24 pt-40 lg:px-8">
-      <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink to-transparent"></div>
-      <div class="relative mx-auto grid max-w-7xl items-center gap-14 pt-12 lg:grid-cols-[1.05fr_0.95fr] lg:pt-20">
-        <div>
-          <div class="mb-7 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur">
-            <span class="text-butter">★★★★★</span>
-            <span class="text-sm font-semibold text-paper">Melbourne laneway favourite</span>
-            <span class="hidden text-sm text-paper/40 sm:inline">· Specialty coffee · Matcha · Pastries</span>
-          </div>
-
-          <h1 class="font-serif max-w-4xl text-6xl font-black leading-[0.9] tracking-[-0.06em] text-paper sm:text-7xl lg:text-8xl">
-            Behind the blue door, Melbourne slows down.
-          </h1>
-
-          <p class="mt-7 max-w-2xl text-lg leading-8 text-paper/72 sm:text-xl">
-            A tucked-away Drewery Lane coffee room for serious espresso, seasonal filter, matcha, quiet corners and pastries worth crossing the CBD for.
-          </p>
-
-          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
-            <a href="#menu" class="inline-flex items-center justify-center gap-2 rounded-full bg-rogueblue px-6 py-3 text-sm font-black text-white shadow-blue transition hover:scale-[1.02]">
-              See what’s pouring →
-            </a>
-            <a href="#visit" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-black text-paper transition hover:bg-white/10">
-              Visit Drewery Lane →
-            </a>
-          </div>
-
-          <div class="mt-10 grid max-w-2xl grid-cols-3 gap-3 text-center sm:text-left">
-            <div class="rounded-3xl border border-white/10 bg-white/[0.045] p-4">
-              <div class="font-serif text-3xl font-bold text-butter">7/7</div>
-              <div class="mt-1 text-xs uppercase tracking-[0.16em] text-paper/45">Open days</div>
+      <div class="mt-12 grid gap-5 md:grid-cols-2">
+        <a href="https://vivianmcqueen.github.io/website-previews/little-rogue/" class="group rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 transition hover:border-blue-500 hover:bg-white/[0.08]">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-xs uppercase tracking-[0.25em] text-blue-400">Cafe preview</p>
+              <h2 class="mt-3 text-3xl font-black">Little Rogue</h2>
             </div>
-            <div class="rounded-3xl border border-white/10 bg-white/[0.045] p-4">
-              <div class="font-serif text-3xl font-bold text-butter">Blue</div>
-              <div class="mt-1 text-xs uppercase tracking-[0.16em] text-paper/45">Door icon</div>
+            <span class="text-3xl transition group-hover:translate-x-1">→</span>
+          </div>
+          <p class="mt-5 text-sm leading-7 text-white/55">
+            Homepage concept for the Drewery Lane coffee and matcha cafe.
+          </p>
+        </a>
+
+        <a href="https://vivianmcqueen.github.io/website-previews/the-cookie-stories-co-preview/" class="group rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 transition hover:border-pink-400 hover:bg-white/[0.08]">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-xs uppercase tracking-[0.25em] text-pink-300">Cookie studio preview</p>
+              <h2 class="mt-3 text-3xl font-black">The Cookie Stories Co.</h2>
             </div>
-            <div class="rounded-3xl border border-white/10 bg-white/[0.045] p-4">
-              <div class="font-serif text-3xl font-bold text-butter">CBD</div>
-              <div class="mt-1 text-xs uppercase tracking-[0.16em] text-paper/45">Laneway</div>
-            </div>
+            <span class="text-3xl transition group-hover:translate-x-1">→</span>
           </div>
-        </div>
-
-        <div class="relative">
-          <div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-rogueblue/25 blur-3xl"></div>
-          <div class="relative overflow-hidden rounded-[2.2rem] border border-white/10 bg-white/[0.05] p-4 shadow-2xl shadow-black/40 backdrop-blur">
-            <div class="relative min-h-[560px] overflow-hidden rounded-[1.6rem] border border-white/10 bg-[#11151c] p-7">
-              <div class="absolute inset-0 opacity-[0.16]" style="background-image: linear-gradient(90deg, rgba(255,255,255,.2) 1px, transparent 1px), linear-gradient(rgba(255,255,255,.16) 1px, transparent 1px); background-size: 46px 46px;"></div>
-              <div class="relative mx-auto mt-4 h-[448px] w-full max-w-[340px] rounded-t-[11rem] border-[12px] border-[#0a0d12] bg-rogueblue shadow-blue">
-                <div class="flex h-full flex-col justify-between overflow-hidden rounded-t-[9.7rem] px-8 pb-8 pt-16 text-white">
-                  <div class="mx-auto w-full max-w-[220px]">
-                    <p class="text-center text-xs font-black uppercase tracking-[0.34em] text-white/70">Blue Door</p>
-                    <h2 class="font-serif mt-5 text-center text-5xl font-black leading-[0.92] tracking-[-0.04em] text-white">
-                      Little<br/>Rogue
-                    </h2>
-                  </div>
-                  <div class="mx-auto w-full max-w-[230px] rounded-3xl bg-white/12 p-5 text-center backdrop-blur">
-                    <p class="text-sm leading-6 text-white/88">
-                      Espresso, filter, matcha and quiet moments for people who know exactly why Melbourne coffee matters.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="relative -mt-2 rounded-3xl border border-white/10 bg-black/35 p-5">
-                <div class="flex items-center justify-between text-sm">
-                  <span class="font-black text-butter">Today’s mood</span>
-                  <span class="text-paper/45">No brunch theatrics</span>
-                </div>
-                <div class="mt-4 h-2 rounded-full bg-white/10"><div class="h-2 w-[78%] rounded-full bg-butter"></div></div>
-                <p class="mt-4 text-sm leading-6 text-paper/58">Coffee first. Then matcha. Then maybe a pastry. Correct order.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="overflow-hidden border-y border-white/10 bg-paper py-4 text-ink">
-      <div class="ticker flex w-[200%] gap-8 whitespace-nowrap text-sm font-black uppercase tracking-[0.28em]">
-        <div class="flex w-1/2 justify-around">
-          <span>Specialty Coffee</span><span>Matcha Latte</span><span>Drewery Lane</span><span>Blue Door</span><span>Pastries</span><span>Backroom</span>
-        </div>
-        <div class="flex w-1/2 justify-around">
-          <span>Specialty Coffee</span><span>Matcha Latte</span><span>Drewery Lane</span><span>Blue Door</span><span>Pastries</span><span>Backroom</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="menu" class="px-5 py-24 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <div class="max-w-3xl">
-          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-rogueblue/30 bg-rogueblue/10 px-4 py-2 text-xs font-black uppercase tracking-[0.28em] text-rogueblue">✦ What’s pouring</div>
-          <h2 class="font-serif text-5xl font-black tracking-[-0.05em] sm:text-6xl">Small menu. Serious intent.</h2>
-          <p class="mt-6 text-lg leading-8 text-paper/65">
-            The best cafe websites do not need to shout. They need to make the decision simple: where it is, what it does beautifully, and why the regulars keep coming back.
+          <p class="mt-5 text-sm leading-7 text-white/55">
+            Homepage concept for personalised cookies, wedding favours and event gifting.
           </p>
-        </div>
-
-        <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-          <article class="group rounded-[2rem] border border-white/10 bg-white/[0.045] p-6 transition hover:-translate-y-1 hover:border-rogueblue/50">
-            <div class="mb-12 text-4xl">☕</div>
-            <h3 class="font-serif text-3xl font-bold">Espresso</h3>
-            <p class="mt-4 text-sm leading-7 text-paper/58">Clean, fast, consistent and made for people who care about the cup more than the theatre.</p>
-          </article>
-          <article class="group rounded-[2rem] border border-white/10 bg-white/[0.045] p-6 transition hover:-translate-y-1 hover:border-rogueblue/50">
-            <div class="mb-12 text-4xl">◒</div>
-            <h3 class="font-serif text-3xl font-bold">Filter</h3>
-            <p class="mt-4 text-sm leading-7 text-paper/58">Rotating seasonal brews and beans for the Melbourne coffee drinker who reads tasting notes.</p>
-          </article>
-          <article class="group rounded-[2rem] border border-white/10 bg-white/[0.045] p-6 transition hover:-translate-y-1 hover:border-matcha/70">
-            <div class="mb-12 text-4xl">🍵</div>
-            <h3 class="font-serif text-3xl font-bold">Not Coffee</h3>
-            <p class="mt-4 text-sm leading-7 text-paper/58">Matcha, green tea lattes and quiet alternatives for the second-drink crowd.</p>
-          </article>
-          <article class="group rounded-[2rem] border border-white/10 bg-white/[0.045] p-6 transition hover:-translate-y-1 hover:border-butter/70">
-            <div class="mb-12 text-4xl">🥐</div>
-            <h3 class="font-serif text-3xl font-bold">Pastries</h3>
-            <p class="mt-4 text-sm leading-7 text-paper/58">A sweet counterpoint to the coffee: cakes, cookies and bakery favourites for the laneway pause.</p>
-          </article>
-        </div>
+        </a>
       </div>
-    </section>
 
-    <section id="story" class="bg-paper px-5 py-24 text-ink lg:px-8">
-      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-        <div>
-          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-ink/10 bg-ink/5 px-4 py-2 text-xs font-black uppercase tracking-[0.28em] text-ink/65">✦ The concept</div>
-          <h2 class="font-serif text-5xl font-black leading-[0.96] tracking-[-0.05em] sm:text-6xl">A laneway cafe should feel discovered, not advertised.</h2>
-          <p class="mt-6 text-lg leading-8 text-ink/70">
-            This direction keeps Little Rogue’s charm intact: quiet, small, intentional, a little hidden, and anchored by the now-iconic blue door.
-          </p>
-          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a href="#visit" class="rounded-full bg-ink px-6 py-3 text-center text-sm font-black text-paper transition hover:bg-rogueblue">Plan your visit</a>
-            <a href="#reviews" class="rounded-full border border-ink/15 px-6 py-3 text-center text-sm font-black text-ink transition hover:bg-ink/5">Read the reputation</a>
-          </div>
-        </div>
-
-        <div class="grid gap-5 sm:grid-cols-2">
-          <div class="rounded-[2rem] bg-ink p-7 text-paper">
-            <div class="text-3xl text-butter">01</div>
-            <h3 class="mt-8 text-xl font-black">Make the blue door ownable</h3>
-            <p class="mt-4 text-sm leading-7 text-paper/60">The doorway becomes the whole visual system: memorable, local and instantly recognisable.</p>
-          </div>
-          <div class="rounded-[2rem] bg-[#e9dfcf] p-7 text-ink">
-            <div class="text-3xl text-rogueblue">02</div>
-            <h3 class="mt-8 text-xl font-black">Convert search traffic</h3>
-            <p class="mt-4 text-sm leading-7 text-ink/65">Tourists and locals searching “best coffee Melbourne CBD” need a clear reason to choose this laneway.</p>
-          </div>
-          <div class="rounded-[2rem] bg-[#e9dfcf] p-7 text-ink">
-            <div class="text-3xl text-matcha">03</div>
-            <h3 class="mt-8 text-xl font-black">Sell the backroom</h3>
-            <p class="mt-4 text-sm leading-7 text-ink/65">A quieter corner gives the site more than product: it sells a feeling, a ritual, a return visit.</p>
-          </div>
-          <div class="rounded-[2rem] bg-rogueblue p-7 text-white">
-            <div class="text-3xl text-white/80">04</div>
-            <h3 class="mt-8 text-xl font-black">Keep it small and sharp</h3>
-            <p class="mt-4 text-sm leading-7 text-white/72">No bloated cafe-site nonsense. Just location, offering, story, proof and action.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="reviews" class="px-5 py-24 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
-          <div>
-            <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-butter/30 bg-butter/10 px-4 py-2 text-xs font-black uppercase tracking-[0.28em] text-butter">✦ Reputation</div>
-            <h2 class="font-serif text-5xl font-black tracking-[-0.05em] sm:text-6xl">The kind of place people whisper about loudly.</h2>
-            <p class="mt-6 text-lg leading-8 text-paper/65">
-              Review-led design turns public love into commercial trust. This is where the homepage should prove Little Rogue is worth the laneway detour.
-            </p>
-          </div>
-
-          <div class="grid gap-5 md:grid-cols-2">
-            <figure class="rounded-[2rem] border border-white/10 bg-white/[0.045] p-6">
-              <p class="text-butter">★★★★★</p>
-              <blockquote class="mt-5 text-base leading-7 text-paper/76">“The blue door, the quiet lane, the coffee ritual — this concept makes the cafe feel like a Melbourne secret worth finding.”</blockquote>
-              <figcaption class="mt-6 border-t border-white/10 pt-5"><div class="font-bold">Website concept note</div><div class="mt-1 text-xs uppercase tracking-[0.2em] text-paper/38">Design direction</div></figcaption>
-            </figure>
-            <figure class="rounded-[2rem] border border-white/10 bg-white/[0.045] p-6">
-              <p class="text-butter">★★★★★</p>
-              <blockquote class="mt-5 text-base leading-7 text-paper/76">“A stronger landing page could convert tourists, coffee hunters and CBD workers without changing the soul of the place.”</blockquote>
-              <figcaption class="mt-6 border-t border-white/10 pt-5"><div class="font-bold">Conversion note</div><div class="mt-1 text-xs uppercase tracking-[0.2em] text-paper/38">Commercial angle</div></figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="visit" class="px-5 pb-24 lg:px-8">
-      <div class="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <div class="rounded-[2.2rem] border border-white/10 bg-white/[0.045] p-8 sm:p-10">
-          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-rogueblue/30 bg-rogueblue/10 px-4 py-2 text-xs font-black uppercase tracking-[0.28em] text-rogueblue">✦ Visit</div>
-          <h2 class="font-serif text-5xl font-black tracking-[-0.05em]">Find the blue door.</h2>
-          <p class="mt-6 max-w-2xl text-lg leading-8 text-paper/65">
-            12 Drewery Lane, Melbourne. Look for the cobalt blue door tucked into the laneway and step inside.
-          </p>
-          <div class="mt-8 grid gap-4 sm:grid-cols-2">
-            <div class="rounded-3xl border border-white/10 bg-black/20 p-5"><div class="mb-4 text-rogueblue">⌖</div><div class="font-bold">12 Drewery Lane</div><div class="mt-1 text-sm text-paper/45">Melbourne VIC 3000</div></div>
-            <div class="rounded-3xl border border-white/10 bg-black/20 p-5"><div class="mb-4 text-butter">◷</div><div class="font-bold">Open 7 days</div><div class="mt-1 text-sm text-paper/45">Mon–Fri 7:30–5 · Sat–Sun 8:30–5</div></div>
-            <div class="rounded-3xl border border-white/10 bg-black/20 p-5"><div class="mb-4 text-matcha">✉</div><div class="font-bold">hello@littlerogue.com.au</div><div class="mt-1 text-sm text-paper/45">General enquiries</div></div>
-            <div class="rounded-3xl border border-white/10 bg-black/20 p-5"><div class="mb-4 text-butter">☕</div><div class="font-bold">shop@littlerogue.com.au</div><div class="mt-1 text-sm text-paper/45">Order enquiries</div></div>
-          </div>
-        </div>
-
-        <div class="rounded-[2.2rem] border border-rogueblue/25 bg-rogueblue/10 p-8 sm:p-10">
-          <h3 class="font-serif text-4xl font-black">Recommended next build</h3>
-          <p class="mt-5 text-sm leading-7 text-paper/65">
-            Turn this into a proper conversion page connected to their real shop, maps, product collection, newsletter, local SEO and analytics.
-          </p>
-          <div class="mt-8 space-y-4 text-sm text-paper/70">
-            <div>✓ Mobile-first layout</div>
-            <div>✓ Google Maps and hours</div>
-            <div>✓ Product/shop path</div>
-            <div>✓ Email capture or loyalty path</div>
-            <div>✓ Review-led trust proof</div>
-          </div>
-          <a href="mailto:hello@littlerogue.com.au" class="mt-9 inline-flex w-full items-center justify-center rounded-full bg-paper px-6 py-4 text-sm font-black text-ink transition hover:bg-butter">
-            Contact Little Rogue →
-          </a>
-        </div>
-      </div>
+      <p class="mt-12 text-xs text-white/35">
+        Unofficial website concepts created for preview purposes only.
+      </p>
     </section>
   </main>
-
-  <footer class="border-t border-white/10 px-5 py-10 lg:px-8">
-    <div class="mx-auto flex max-w-7xl flex-col gap-5 text-sm text-paper/45 sm:flex-row sm:items-center sm:justify-between">
-      <div>Unofficial website concept for preview purposes only.</div>
-      <div class="flex gap-4">
-        <a class="hover:text-butter" href="#menu">Menu</a>
-        <a class="hover:text-butter" href="#visit">Visit</a>
-        <a class="hover:text-butter" href="#top">Back to top</a>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
